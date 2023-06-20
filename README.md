@@ -42,13 +42,9 @@ If you had Gazebo installed when compiling Hagen's packages, Gazebo support shou
    > *Tip*: If the command `ros2 pkg list | grep hagen_gazebo` comes up empty after setting up the environment, 
      Gazebo support wasn't correctly setup.
 
-2. Launch Hagen in a city (this will take some time to download models):
+2. Launch Hagen in an empty world:
 
-       ros2 launch hagen_gazebo hagen.launch.py world:=hagen_city.world
-
-3. Launch Hagen in an empty world:
-
-       ros2 launch hagen_gazebo hagen.launch.py world:=hagen_empty.world
+       ros2 launch hagen_gazebo hagen.launch.py 
         
    To avoid these steps, in your terminal, naviagate to the repository directory and make the file **"run.sh"** executable, then run it to start the simulation directly.
     
